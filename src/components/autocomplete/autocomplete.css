@@ -1,2 +1,91 @@
-.container {
+.search {
+    padding: 1em 2em;
+    background: linear-gradient(to right, #ff690f, #e7381b);
+    position: relative;
+}
+
+.search form {
+    display: flex;
+    margin: 0;
+}
+
+.search input {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 0.8em 1em;
+    color: white;
+    flex: 1;
+    font-weight: bold;
+    border-radius: 0 3px 3px 0;
+    transition: 0.2s all;
+}
+
+.search input:focus {
+    background: white;
+    color: #3a4958;
+}
+
+.search button {
+    background: white;
+    border: none;
+    padding: 0.8em 1em;
+    margin-left: 3px;
+    border-radius: 3px;
+}
+
+.movies {
+    position: absolute;
+    top: 100%;
+    left: 2em;
+    right: 2em;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+.movie {
+    padding: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: 0.2s all;
+}
+
+.movie:hover {
+    background-color: #ff690f;
+}
+
+.movie:hover p {
+    color: white;
+}
+
+.movie p {
+    margin: 0;
+    transition: 0.2s all;
+    color: #3a4958;
+}
+
+.movie p:first-child {
+    font-weight: bold;
+}
+
+.movie p span {
+    font-size: 0.75em;
+}
+
+.movieIcon,
+.searchIcon {
+    height: 20px;
+}
+
+.movieIconWrapper {
+    padding: 0.8em 1em;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px 0 0 3px;
+}
+
+.movieIcon {
+    fill: white;
+}
+
+.searchIcon {
+    fill: #e7381b;
 }
